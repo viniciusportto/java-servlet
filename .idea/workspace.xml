@@ -10,10 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9a852fa-4290-47ea-bd8d-5b4f1ec0234a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/HelloServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/manager/HelloServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bem-vindo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/newCompanyServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/newCompanyServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/formNewCompany.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/formNewCompany.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -74,6 +74,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.com.manager" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\vinic\projetos\manager\src\main\webapp\WEB-INF" />
     </key>
@@ -179,7 +182,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675121888390</updated>
-      <workItem from="1675121889499" duration="8755000" />
+      <workItem from="1675121889499" duration="10641000" />
     </task>
     <servers />
   </component>
