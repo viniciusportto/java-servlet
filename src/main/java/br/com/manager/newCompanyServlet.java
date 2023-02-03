@@ -1,5 +1,7 @@
 package br.com.manager;
 
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
@@ -9,7 +11,7 @@ import java.io.PrintWriter;
 public class newCompanyServlet extends HttpServlet {
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
         System.out.println("Registering new company");
 
         String companyName = req.getParameter("Company name");
@@ -21,6 +23,11 @@ public class newCompanyServlet extends HttpServlet {
 
         PrintWriter out = resp.getWriter();
         out.println("<html><body>Company " + companyName + " registered with successful</body></html>");
+
+        //call JSP
+        RequestDispatcher reqdis = req.getRequestDispatcher("/newCompanyCreate.jsp");
+        req.setAttribute("company", company.getName());
+        reqdis.forward(req, resp);
 
     }
 }
