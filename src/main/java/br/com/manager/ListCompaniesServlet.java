@@ -15,16 +15,11 @@ public class ListCompaniesServlet extends HttpServlet {
 
         DataBase dataBase = new DataBase();
         List<Company> companyList = dataBase.getCompanies();
-        PrintWriter out = response.getWriter();
 
-        out.println("<html><body>");
-        out.println("<ul>");
-        for (Company company : companyList) {
-            out.println("<li>" + company.getName() + "</li>");
-        }
-        out.println("</ul>");
-        out.println("</body></html>");
+        request.setAttribute("companies", companyList);
 
+        RequestDispatcher reqdisp = request.getRequestDispatcher("/listCompanies.jsp");
+        reqdisp.forward(request, response);
 
     }
 }
