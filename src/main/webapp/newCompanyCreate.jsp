@@ -1,10 +1,5 @@
-<%//scriplet
-    String companyName = (String)request.getAttribute("company");
-    System.out.println(companyName);
-%>
-
 <html>
     <body>
-        Company <%=companyName%> Sucessfull create!
+        Company ${ company } Sucessfull create!
     </body>
 </html>
