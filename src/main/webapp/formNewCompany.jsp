@@ -4,7 +4,8 @@
 <body>
     <form action="${linkServletNewCompany}" method="post">
 
-      Company name: <input type="text" name="Company name"/>
+        Company name: <input type="text" name="Company name"/>
+        Open Date: <input type="text" name="date">
 
         <input type="submit"/>
 

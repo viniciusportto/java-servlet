@@ -1,9 +1,12 @@
 package br.com.manager;
 
+import java.util.Date;
+
 public class Company {
 
     private Integer id;
     private String name;
+    private Date openDate = new Date();
 
 
     public int getId() {
@@ -20,5 +23,13 @@ public class Company {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Date getOpenDate() {
+        return openDate;
+    }
+
+    public void setOpenDate(Date openDate) {
+        this.openDate = openDate;
     }
 }
