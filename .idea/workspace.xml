@@ -11,11 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a9a852fa-4290-47ea-bd8d-5b4f1ec0234a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/Company.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/DataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/HelloServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/ListCompaniesServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/ListCompaniesServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/newCompanyServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/newCompanyServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/EditCompanyServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/EditCompanyServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/listCompanies.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/listCompanies.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,6 +87,7 @@
       <recent name="C:\Users\vinic\projetos\manager\src\main\webapp\WEB-INF" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vinic\projetos\manager\src\main\webapp" />
       <recent name="C:\Users\vinic\projetos\manager\src\main\webapp\WEB-INF\lib" />
       <recent name="C:\Users\vinic\projetos\manager\src\main\webapp\WEB-INF" />
     </key>
@@ -197,7 +195,7 @@
       <workItem from="1675438103921" duration="17317000" />
       <workItem from="1675898089491" duration="1796000" />
       <workItem from="1675968250500" duration="599000" />
-      <workItem from="1676048840680" duration="8140000" />
+      <workItem from="1676048840680" duration="11072000" />
     </task>
     <servers />
   </component>

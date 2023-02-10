@@ -15,7 +15,7 @@ public class DataBase {
         company.setName("Google");
 
         Company company2 = new Company();
-        company.setId(sequentialKey++);
+        company2.setId(sequentialKey++);
         company2.setName("Amazon");
 
         companiesList.add(company);
@@ -40,5 +40,14 @@ public class DataBase {
                 it.remove();
             }
         }
+    }
+
+    public Company searchCompanyToId(Integer id) {
+        for (Company company : companiesList) {
+            if (company.getId() == id) {
+                return company;
+            }
+        }
+        return null;
     }
 }
