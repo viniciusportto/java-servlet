@@ -12,7 +12,7 @@
 
             Company name: <input type="text" name="Company name" value="${company.name}" />
             Open Date: <input type="text" name="date" value="<fmt:formatDate value="${company.openDate}" pattern="MM/dd/yyyy"/>" />
-
+            <input type="text" name=id" value="${company.id}">
             <input type="submit" />
         </form>
 
