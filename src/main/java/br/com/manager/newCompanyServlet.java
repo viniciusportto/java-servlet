@@ -14,7 +14,7 @@ import java.util.Date;
 public class newCompanyServlet extends HttpServlet {
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+    protected void service(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
         System.out.println("Registering new company");
 
         String companyName = req.getParameter("Company name");
