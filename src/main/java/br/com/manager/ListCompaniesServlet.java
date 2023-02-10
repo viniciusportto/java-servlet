@@ -11,7 +11,7 @@ import java.util.List;
 public class ListCompaniesServlet extends HttpServlet {
 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         DataBase dataBase = new DataBase();
         List<Company> companyList = dataBase.getCompanies();

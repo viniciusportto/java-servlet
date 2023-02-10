@@ -14,7 +14,7 @@ import java.util.Date;
 public class newCompanyServlet extends HttpServlet {
 
     @Override
-    protected void service(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
         System.out.println("Registering new company");
 
         String companyName = req.getParameter("Company name");
@@ -36,13 +36,10 @@ public class newCompanyServlet extends HttpServlet {
         DataBase dataBase = new DataBase();
         dataBase.addCompany(company);
 
-        PrintWriter out = resp.getWriter();
-        out.println("<html><body>Company " + companyName + " registered with successful</body></html>");
-
-        //call JSP
-        RequestDispatcher reqdis = req.getRequestDispatcher("/newCompanyCreate.jsp");
         req.setAttribute("company", company.getName());
-        reqdis.forward(req, resp);
+
+        //redirecting by browser
+        resp.sendRedirect("listCompanies");
 
     }
 }
