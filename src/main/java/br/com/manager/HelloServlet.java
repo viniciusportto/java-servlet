@@ -11,15 +11,14 @@ import java.io.PrintWriter;
 public class HelloServlet extends HttpServlet {
 
     @Override
-    protected void service(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+    protected void service(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
-        PrintWriter out = resp.getWriter();
+        PrintWriter out = response.getWriter();
         out.println("<html>");
         out.println("<body>");
         out.println("Happy to be solving this problem, Hello Servlet :)");
         out.println("</body>");
         out.println("</html");
-
 
     }
 }

@@ -1,5 +1,6 @@
 package br.com.manager;
 
+import javax.persistence.criteria.CriteriaBuilder;
 import java.util.Date;
 
 public class Company {
@@ -9,7 +10,7 @@ public class Company {
     private Date openDate = new Date();
 
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 

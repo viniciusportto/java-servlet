@@ -1,11 +1,9 @@
 package br.com.manager;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -14,11 +12,11 @@ import java.util.Date;
 public class newCompanyServlet extends HttpServlet {
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         System.out.println("Registering new company");
 
-        String companyName = req.getParameter("Company name");
-        String paramCompanyDate = req.getParameter("date");
+        String companyName = request.getParameter("Company name");
+        String paramCompanyDate = request.getParameter("date");
 
         Date openDate = null;
 
@@ -36,10 +34,10 @@ public class newCompanyServlet extends HttpServlet {
         DataBase dataBase = new DataBase();
         dataBase.addCompany(company);
 
-        req.setAttribute("company", company.getName());
+        request.setAttribute("company", company.getName());
 
         //redirecting by browser
-        resp.sendRedirect("listCompanies");
+        response.sendRedirect("listCompanies");
 
     }
 }
