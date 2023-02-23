@@ -1,6 +1,5 @@
-package br.com.manager;
+package br.com.manager.model;
 
-import javax.persistence.criteria.CriteriaBuilder;
 import java.util.Date;
 
 public class Company {

@@ -1,4 +1,4 @@
-package br.com.manager;
+package br.com.manager.model;
 
 import java.util.ArrayList;
 import java.util.Iterator;

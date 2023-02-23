@@ -10,15 +10,21 @@ import java.io.PrintWriter;
 @WebServlet(urlPatterns = "/hi")
 public class HelloServlet extends HttpServlet {
 
+    public  HelloServlet(){
+        System.out.println("Creating Hello world servlet.");
+    }
+
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
         PrintWriter out = response.getWriter();
         out.println("<html>");
         out.println("<body>");
-        out.println("Happy to be solving this problem, Hello Servlet :)");
+        out.println("Hello Servlet :)");
         out.println("</body>");
         out.println("</html");
+
+        System.out.println("The Servlet HelloServlet was called");
 
     }
 }

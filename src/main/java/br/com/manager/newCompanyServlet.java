@@ -1,5 +1,8 @@
 package br.com.manager;
 
+import br.com.manager.model.Company;
+import br.com.manager.model.DataBase;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
