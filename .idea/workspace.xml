@@ -11,16 +11,17 @@
   <component name="ChangeListManager">
     <list default="true" id="a9a852fa-4290-47ea-bd8d-5b4f1ec0234a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/DeleteCompanyServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/DeleteCompanyServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/EditCompanyServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/EditCompanyServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/ListCompaniesServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/ListCompaniesServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/SingleEntryServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/SingleEntryServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/action/EditCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/action/EditCompany.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/action/ListCompanies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/action/ListCompanies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/newCompanyServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/newCompanyServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/showCompanyServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/showCompanyServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/formEditCompany.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/formEditCompany.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/formNewCompany.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/formNewCompany.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/listCompanies.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/listCompanies.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/action/NewCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/action/NewCompany.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/action/RemoveCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/action/RemoveCompany.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/action/ShowCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/action/ShowCompany.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/formEditCompany.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/formEditCompany.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/formNewCompany.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/formNewCompany.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/listCompanies.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/listCompanies.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/newCompanyCreate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/newCompanyCreate.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +69,9 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2L4EJZgrVxMkCiY1kZty4WuCvLz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -107,6 +111,7 @@
       <recent name="C:\Users\vinic\projetos\manager\src\main\webapp\WEB-INF" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vinic\projetos\manager\src\main\webapp\WEB-INF\view" />
       <recent name="C:\Users\vinic\projetos\manager\src\main\webapp" />
       <recent name="C:\Users\vinic\projetos\manager\src\main\webapp\WEB-INF\lib" />
       <recent name="C:\Users\vinic\projetos\manager\src\main\webapp\WEB-INF" />
@@ -227,7 +232,7 @@
       <workItem from="1677194073835" duration="777000" />
       <workItem from="1677211993866" duration="666000" />
       <workItem from="1677628581827" duration="9391000" />
-      <workItem from="1680745581765" duration="946000" />
+      <workItem from="1680745581765" duration="6260000" />
     </task>
     <servers />
   </component>

@@ -12,7 +12,7 @@ import java.util.List;
 
 public class ListCompanies {
 
-    public void listExecute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public String listExecute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         System.out.println("Listing companies");
 
@@ -21,7 +21,6 @@ public class ListCompanies {
 
         request.setAttribute("companies", companyList);
 
-        RequestDispatcher reqdisp = request.getRequestDispatcher("/listCompanies.jsp");
-        reqdisp.forward(request, response);
+       return "forward:listCompanies.jsp";
     }
 }

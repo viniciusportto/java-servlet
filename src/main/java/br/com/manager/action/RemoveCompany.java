@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class RemoveCompany {
 
-    public void removeExecute(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    public String removeExecute(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
         System.out.println("Removing companies");
 
@@ -20,6 +20,6 @@ public class RemoveCompany {
         DataBase dataBase = new DataBase();
         dataBase.deleteCompany(id);
 
-        response.sendRedirect("entrance?action=ListCompanies");
+        return "redirect:entrance?action=ListCompanies";
     }
 }

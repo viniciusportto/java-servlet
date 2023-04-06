@@ -3,7 +3,6 @@ package br.com.manager.action;
 import br.com.manager.model.Company;
 import br.com.manager.model.DataBase;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -11,7 +10,7 @@ import java.io.IOException;
 
 public class ShowCompany {
 
-    public void showExecute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public String showExecute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         System.out.println("Showing companies");
 
@@ -25,10 +24,6 @@ public class ShowCompany {
 
         request.setAttribute("company", company);
 
-        RequestDispatcher rd = request.getRequestDispatcher("/formEditCompany.jsp");
-        rd.forward(request, response);
-
-
+        return "forward:formEditCompany.jsp";
     }
-
 }

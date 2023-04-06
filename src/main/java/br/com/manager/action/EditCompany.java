@@ -13,7 +13,7 @@ import java.util.Date;
 
 public class EditCompany {
 
-    public void editExecute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+    public String editExecute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 
         String companyName = request.getParameter("Company name");
         String paramCompanyDate = request.getParameter("date");
@@ -36,7 +36,7 @@ public class EditCompany {
         company.setName(companyName);
         company.setOpenDate(openDate);
 
-        response.sendRedirect("entrance?action=ListCompanies");
+        return "redirect:entrance?action=ListCompanies";
 
     }
 }
