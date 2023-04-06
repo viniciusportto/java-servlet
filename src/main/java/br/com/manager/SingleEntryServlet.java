@@ -18,29 +18,15 @@ public class SingleEntryServlet extends HttpServlet {
 
         String paramAction = request.getParameter("action");
 
-        String name = null;
-        if(paramAction.equals("ListCompanies")){
-            ListCompanies action = new ListCompanies();
-            name = action.listExecute(request, response);
+        String className = "br.com.manager.action." + paramAction;
 
-        }else if(paramAction.equals("RemoveCompany")) {
-            RemoveCompany action = new RemoveCompany();
-            name = action.removeExecute(request, response);
-
-        } else if (paramAction.equals("ShowCompany")) {
-            ShowCompany action = new ShowCompany();
-            name = action.showExecute(request, response);
-
-        } else if (paramAction.equals("EditCompany")) {
-            EditCompany action = new EditCompany();
-            name = action.editExecute(request, response);
-
-        } else if (paramAction.equals("NewCompany")) {
-            NewCompany action = new NewCompany();
-            name = action.newCompanyExecute(request, response);
-        } else if (paramAction.equals("NewCompanyForm")) {
-            NewCompanyForm action = new NewCompanyForm();
-            name = action.newCompanyExecute(request, response);
+       String name;
+        try {
+           Class classe = Class.forName(className);
+           Action action = (Action) classe.newInstance();//load the class with the name
+            name = action.execute(request,response);
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException e) {
+            throw new ServletException(e);
         }
 
         String[] typeAndAddress = name.split(":");
@@ -50,5 +36,31 @@ public class SingleEntryServlet extends HttpServlet {
         }else{
             response.sendRedirect(typeAndAddress[1]);
         }
+
+//  Codigo sem a assinatura do método na interface Action, seria um tipo de assinatura informal, sempre repetindo o execute em cada if
+//                    String name = null;
+//                    if(paramAction.equals("ListCompanies")){
+//                        ListCompanies action = new ListCompanies();
+//                        name = action.listExecute(request, response);
+//
+//                    }else if(paramAction.equals("RemoveCompany")) {
+//                        RemoveCompany action = new RemoveCompany();
+//                        name = action.removeExecute(request, response);
+//
+//                    } else if (paramAction.equals("ShowCompany")) {
+//                        ShowCompany action = new ShowCompany();
+//                        name = action.showExecute(request, response);
+//
+//                    } else if (paramAction.equals("EditCompany")) {
+//                        EditCompany action = new EditCompany();
+//                        name = action.editExecute(request, response);
+//
+//                    } else if (paramAction.equals("NewCompany")) {
+//                        NewCompany action = new NewCompany();
+//                        name = action.newCompanyExecute(request, response);
+//                    } else if (paramAction.equals("NewCompanyForm")) {
+//                        NewCompanyForm action = new NewCompanyForm();
+//                        name = action.newCompanyExecute(request, response);
+//                    }
     }
 }

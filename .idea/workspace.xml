@@ -15,13 +15,9 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/action/EditCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/action/EditCompany.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/action/ListCompanies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/action/ListCompanies.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/action/NewCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/action/NewCompany.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/action/NewCompanyForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/action/NewCompanyForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/action/RemoveCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/action/RemoveCompany.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/action/ShowCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/action/ShowCompany.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/formEditCompany.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/formEditCompany.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/formNewCompany.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/formNewCompany.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/listCompanies.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/listCompanies.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/newCompanyCreate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/newCompanyCreate.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +30,7 @@
         <option value="HTML File" />
         <option value="Jsp File" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -54,7 +51,7 @@
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
-    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_WARNINGS" value="true" />
     <option name="FILTER_INFO" value="true" />
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
@@ -105,6 +102,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.com.manager.action" />
       <recent name="br.com.manager" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -232,7 +230,7 @@
       <workItem from="1677194073835" duration="777000" />
       <workItem from="1677211993866" duration="666000" />
       <workItem from="1677628581827" duration="9391000" />
-      <workItem from="1680745581765" duration="6260000" />
+      <workItem from="1680745581765" duration="9636000" />
     </task>
     <servers />
   </component>

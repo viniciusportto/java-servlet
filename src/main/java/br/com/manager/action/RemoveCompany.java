@@ -2,13 +2,14 @@ package br.com.manager.action;
 
 import br.com.manager.model.DataBase;
 
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class RemoveCompany {
+public class RemoveCompany implements Action {
 
-    public String removeExecute(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    public String execute (HttpServletRequest request, HttpServletResponse response) throws IOException {
 
         System.out.println("Removing companies");
 

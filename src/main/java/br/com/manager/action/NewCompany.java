@@ -10,9 +10,9 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class NewCompany {
+public class NewCompany implements Action {
 
-    public String newCompanyExecute(HttpServletRequest request, HttpServletResponse response) throws ServletException {
+    public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException {
 
         System.out.println("Registering new company");
 
@@ -41,4 +41,5 @@ public class NewCompany {
        return "forward:entrance?action=ListCompanies";
 
     }
+
 }

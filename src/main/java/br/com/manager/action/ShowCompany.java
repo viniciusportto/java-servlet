@@ -8,9 +8,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class ShowCompany {
+public class ShowCompany implements Action {
 
-    public String showExecute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         System.out.println("Showing companies");
 
