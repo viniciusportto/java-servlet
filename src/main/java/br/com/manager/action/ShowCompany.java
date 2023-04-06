@@ -1,22 +1,19 @@
-package br.com.manager;
+package br.com.manager.action;
 
 import br.com.manager.model.Company;
 import br.com.manager.model.DataBase;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+public class ShowCompany {
 
-//@WebServlet("/showCompany")
-public class showCompanyServlet extends HttpServlet {
+    public void showExecute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-    @Override
-    protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        System.out.println("Showing companies");
 
         String paramId = request.getParameter("id");
         Integer id = Integer.valueOf(paramId);
@@ -31,5 +28,7 @@ public class showCompanyServlet extends HttpServlet {
         RequestDispatcher rd = request.getRequestDispatcher("/formEditCompany.jsp");
         rd.forward(request, response);
 
+
     }
+
 }

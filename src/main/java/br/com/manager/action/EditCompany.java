@@ -1,25 +1,26 @@
-package br.com.manager;
+package br.com.manager.action;
 
 import br.com.manager.model.Company;
 import br.com.manager.model.DataBase;
 
 import javax.servlet.ServletException;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-//@WebServlet("/newcompany")
-public class newCompanyServlet extends HttpServlet {
+public class EditCompany {
 
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-        System.out.println("Registering new company");
+    public void editExecute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 
         String companyName = request.getParameter("Company name");
         String paramCompanyDate = request.getParameter("date");
+        String paramId = request.getParameter("id");
+        Integer id = Integer.valueOf(paramId);
+
+        System.out.println("Changing Company " + id);
 
         Date openDate = null;
 
@@ -30,17 +31,12 @@ public class newCompanyServlet extends HttpServlet {
             throw new ServletException(e);
         }
 
-        Company company = new Company();
+        DataBase dataBase = new DataBase();
+        Company company = dataBase.searchCompanyToId(id);
         company.setName(companyName);
         company.setOpenDate(openDate);
 
-        DataBase dataBase = new DataBase();
-        dataBase.addCompany(company);
-
-        request.setAttribute("company", company.getName());
-
-        //redirecting by browser
-        response.sendRedirect("listCompanies");
+        response.sendRedirect("entrance?action=ListCompanies");
 
     }
 }

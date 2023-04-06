@@ -13,7 +13,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-@WebServlet("/editCompany")
+//@WebServlet("/editCompany")
 public class EditCompanyServlet extends HttpServlet {
 
     @Override

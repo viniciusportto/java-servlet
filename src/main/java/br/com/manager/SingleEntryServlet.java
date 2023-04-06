@@ -1,6 +1,6 @@
 package br.com.manager;
 
-import br.com.manager.action.ListCompanies;
+import br.com.manager.action.*;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -18,16 +18,24 @@ public class SingleEntryServlet extends HttpServlet {
         String paramAction = request.getParameter("action");
 
         if(paramAction.equals("ListCompanies")){
-
             ListCompanies action = new ListCompanies();
-            action.execute(request, response);
+            action.listExecute(request, response);
 
-        }else if(paramAction.equals("RemoveCompany")){
-            System.out.println("Removing company");
+        }else if(paramAction.equals("RemoveCompany")) {
+            RemoveCompany action = new RemoveCompany();
+            action.removeExecute(request, response);
+
         } else if (paramAction.equals("ShowCompany")) {
-            System.out.println("Showing company data");
+            ShowCompany action = new ShowCompany();
+            action.showExecute(request, response);
 
+        } else if (paramAction.equals("EditCompany")) {
+            EditCompany action = new EditCompany();
+            action.editExecute(request, response);
+
+        } else if (paramAction.equals("NewCompany")) {
+            NewCompany action = new NewCompany();
+            action.newCompanyExecute(request, response);
         }
-
     }
 }

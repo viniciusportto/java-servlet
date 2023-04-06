@@ -9,7 +9,7 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/listCompanies")
+//@WebServlet("/listCompanies")
 public class ListCompaniesServlet extends HttpServlet {
 
     @Override

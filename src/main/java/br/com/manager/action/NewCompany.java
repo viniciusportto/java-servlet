@@ -1,21 +1,20 @@
-package br.com.manager;
+package br.com.manager.action;
 
 import br.com.manager.model.Company;
 import br.com.manager.model.DataBase;
 
 import javax.servlet.ServletException;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-//@WebServlet("/newcompany")
-public class newCompanyServlet extends HttpServlet {
+public class NewCompany {
 
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+    public void newCompanyExecute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+
         System.out.println("Registering new company");
 
         String companyName = request.getParameter("Company name");
@@ -40,7 +39,7 @@ public class newCompanyServlet extends HttpServlet {
         request.setAttribute("company", company.getName());
 
         //redirecting by browser
-        response.sendRedirect("listCompanies");
+        response.sendRedirect("entrance?action=ListCompanies");
 
     }
 }

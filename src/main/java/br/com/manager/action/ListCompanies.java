@@ -12,7 +12,7 @@ import java.util.List;
 
 public class ListCompanies {
 
-    public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void listExecute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         System.out.println("Listing companies");
 
