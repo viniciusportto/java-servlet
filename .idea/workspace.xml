@@ -11,13 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a9a852fa-4290-47ea-bd8d-5b4f1ec0234a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/SingleEntryServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/SingleEntryServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/action/EditCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/action/EditCompany.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/action/ListCompanies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/action/ListCompanies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/action/NewCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/action/NewCompany.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/action/NewCompanyForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/action/NewCompanyForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/action/RemoveCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/action/RemoveCompany.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/action/ShowCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/action/ShowCompany.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/action/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/action/LoginForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/model/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/model/DataBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +24,8 @@
       <list>
         <option value="HTML File" />
         <option value="Jsp File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -75,37 +70,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/vinic/projetos/manager/src/main/java/br/com/manager&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/vinic/.m2/repository/javax/servlet/jstl/1.2&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.3321839&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_directory_selection": "C:/Users/vinic/projetos/manager/src/main/java/br/com/manager",
+    "last_opened_file_path": "C:/Users/vinic/projetos/manager/src/main/webapp/WEB-INF/view",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3321839",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="br.com.manager.action" />
       <recent name="br.com.manager" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\vinic\projetos\manager\src\main\webapp\WEB-INF\view" />
       <recent name="C:\Users\vinic\projetos\manager\src\main\webapp\WEB-INF" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -230,7 +226,7 @@
       <workItem from="1677194073835" duration="777000" />
       <workItem from="1677211993866" duration="666000" />
       <workItem from="1677628581827" duration="9391000" />
-      <workItem from="1680745581765" duration="9636000" />
+      <workItem from="1680745581765" duration="12039000" />
     </task>
     <servers />
   </component>

@@ -7,6 +7,7 @@ import java.util.List;
 public class DataBase {
 
     private static List<Company> companiesList = new ArrayList<>();
+    private static List<User> usersList = new ArrayList<>();
     private static Integer sequentialKey = 1;
 
     static {
@@ -20,6 +21,17 @@ public class DataBase {
 
         companiesList.add(company);
         companiesList.add(company2);
+
+        User u1 = new User();
+        u1.setLogin("vini");
+        u1.setPassword("12345");
+
+        User u2 = new User();
+        u2.setLogin("Isa");
+        u2.setPassword("1234");
+
+        usersList.add(u1);
+        usersList.add(u2);
     }
 
     public void addCompany(Company company) {
