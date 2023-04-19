@@ -27,7 +27,7 @@ public class DataBase {
         u1.setPassword("12345");
 
         User u2 = new User();
-        u2.setLogin("Isa");
+        u2.setLogin("isa");
         u2.setPassword("1234");
 
         usersList.add(u1);
@@ -58,6 +58,15 @@ public class DataBase {
         for (Company company : companiesList) {
             if (company.getId() == id) {
                 return company;
+            }
+        }
+        return null;
+    }
+
+    public User existUser(String login, String password) {
+        for (User user : usersList) {
+            if (user.itsEquals(login, password)) {
+                return user;
             }
         }
         return null;

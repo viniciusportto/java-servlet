@@ -4,6 +4,12 @@
 <html>
 <body>
 
+        User Logged: ${userLogged.login}
+
+        <br>
+        <br>
+        <br>
+
          <c:if test="${not empty company}">
             Company ${ company } Sucessfull create!
          </c:if>
