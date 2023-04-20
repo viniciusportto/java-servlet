@@ -12,7 +12,6 @@ public class Logout implements Action{
 
         HttpSession session = request.getSession();
 
-        session.removeAttribute("userLogged");
         session.invalidate();
 
         return "redirect:entrance?action=LoginForm";
