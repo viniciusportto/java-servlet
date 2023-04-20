@@ -3,6 +3,7 @@
 
 <html>
 <body>
+       <c:import url="logout-partial.jsp"/>
 
         User Logged: ${userLogged.login}
 
