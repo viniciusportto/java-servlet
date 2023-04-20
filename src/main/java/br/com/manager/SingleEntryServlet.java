@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 @WebServlet("/entrance")
@@ -18,9 +19,18 @@ public class SingleEntryServlet extends HttpServlet {
 
         String paramAction = request.getParameter("action");
 
+        HttpSession session = request.getSession();
+        boolean userAreNotLogged = (session.getAttribute("userLogged") == null);
+        boolean itsProtectedAction = !(paramAction.equals("Login") || paramAction.equals("LoginForm"));
+
+        if(itsProtectedAction && userAreNotLogged){
+            response.sendRedirect("entrance?action=LoginForm");
+            return;
+        }
+
         String className = "br.com.manager.action." + paramAction;
 
-       String name;
+        String name;
         try {
            Class classe = Class.forName(className);
            Action action = (Action) classe.newInstance();//load the class with the name
