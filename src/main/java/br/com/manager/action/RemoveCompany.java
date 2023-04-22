@@ -11,7 +11,7 @@ public class RemoveCompany implements Action {
 
     public String execute (HttpServletRequest request, HttpServletResponse response) throws IOException {
 
-        System.out.println("Removing companies");
+        System.out.println("Removing company");
 
         String paramId = request.getParameter("id");
         Integer id = Integer.valueOf(paramId);
