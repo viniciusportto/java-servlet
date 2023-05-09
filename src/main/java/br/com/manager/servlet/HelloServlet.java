@@ -1,4 +1,4 @@
-package br.com.manager;
+package br.com.manager.servlet;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;

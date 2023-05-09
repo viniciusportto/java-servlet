@@ -1,4 +1,4 @@
-package br.com.manager;
+package br.com.manager.servlet;
 
 import br.com.manager.action.*;
 
@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebServlet("/entrance")
+@WebServlet(urlPatterns = "/entrance")
 public class SingleEntryServlet extends HttpServlet {
 
     @Override

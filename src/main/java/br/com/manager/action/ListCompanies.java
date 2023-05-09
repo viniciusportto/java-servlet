@@ -6,18 +6,12 @@ import br.com.manager.model.DataBase;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
 
-public class ListCompanies implements Action{
+public class ListCompanies implements Action {
 
     public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-        HttpSession session = request.getSession();
-        if(session.getAttribute("userLogged") == null){
-            return "redirect:entrance?action=LoginForm";
-        }
 
         System.out.println("Listing companies");
 
@@ -26,6 +20,6 @@ public class ListCompanies implements Action{
 
         request.setAttribute("companies", companyList);
 
-       return "forward:listCompanies.jsp";
+        return "forward:listCompanies.jsp";
     }
 }
