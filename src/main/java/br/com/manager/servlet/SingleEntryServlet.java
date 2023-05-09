@@ -4,14 +4,12 @@ import br.com.manager.action.*;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebServlet(urlPatterns = "/entrance")
+//@WebServlet(urlPatterns = "/entrance")
 public class SingleEntryServlet extends HttpServlet {
 
     @Override
@@ -19,14 +17,14 @@ public class SingleEntryServlet extends HttpServlet {
 
         String paramAction = request.getParameter("action");
 
-        HttpSession session = request.getSession();
-        boolean userAreNotLogged = (session.getAttribute("userLogged") == null);
-        boolean itsProtectedAction = !(paramAction.equals("Login") || paramAction.equals("LoginForm"));
-
-        if(itsProtectedAction && userAreNotLogged){
-            response.sendRedirect("entrance?action=LoginForm");
-            return;
-        }
+//        HttpSession session = request.getSession();
+//        boolean userAreNotLogged = (session.getAttribute("userLogged") == null);
+//        boolean itsProtectedAction = !(paramAction.equals("Login") || paramAction.equals("LoginForm"));
+//
+//        if(itsProtectedAction && userAreNotLogged){
+//            response.sendRedirect("entrance?action=LoginForm");
+//            return;
+//        }
 
         String className = "br.com.manager.action." + paramAction;
 

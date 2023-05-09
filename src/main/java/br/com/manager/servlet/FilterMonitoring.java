@@ -4,11 +4,13 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
 import java.io.IOException;
 
-@WebFilter(urlPatterns = "/entrance")
+//@WebFilter(urlPatterns = "/entrance")
 public class FilterMonitoring implements Filter {
-    @Override
+
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
             throws IOException, ServletException {
+
+        System.out.println("FilterMonitoring");
 
         long before = System.currentTimeMillis();
 
@@ -18,7 +20,7 @@ public class FilterMonitoring implements Filter {
         chain.doFilter(request, response);
 
         long after = System.currentTimeMillis();
-        System.out.println("Execution time of the action:" + action + " -> " + (after - before));
+        System.out.println("Execution time of the action " + action + " -> " + (after - before));
 
     }
 }
