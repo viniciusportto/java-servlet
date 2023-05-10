@@ -10,12 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9a852fa-4290-47ea-bd8d-5b4f1ec0234a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/servlet/AuthorizationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/servlet/ControllerFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/servlet/FilterMonitoring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/servlet/FilterMonitoring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/manager/servlet/SingleEntryServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/manager/servlet/SingleEntryServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,7 +226,7 @@
       <workItem from="1682192252565" duration="14000" />
       <workItem from="1683580248984" duration="625000" />
       <workItem from="1683588430096" duration="5850000" />
-      <workItem from="1683606042467" duration="2424000" />
+      <workItem from="1683606042467" duration="3156000" />
     </task>
     <servers />
   </component>
