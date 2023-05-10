@@ -21,6 +21,7 @@ public class CompanyService extends HttpServlet {
 
         List<Company> companies = new DataBase().getCompanies();
 
+        // webservice resposta de dados com JSON
         Gson gson = new Gson();
         String json = gson.toJson(companies);
 
